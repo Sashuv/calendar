@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: FFFCF9;
+  color:white;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  width: 45rem;
+  height: 52rem;
+  background-color: rgb(253, 253, 253);
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+.month {
+  box-shadow:0 0.2rem 0.2rem rgba(219, 219, 219, 0.5); ;
+  width: 100%;
+  height: 12rem;
+  background-color: #ffffff;
+  color:#D1603D ;
+  /* border: 1px solid black; */
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  /* text-shadow:  */
+}
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 1.6rem;
+}
+
+.weekdays {
+  color: #D1603D;
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(44.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5); */
+}
+
+.days {
+  color: rgb(117, 117, 117);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.days div {
+  font-size: 1.6rem;
+  margin: 0.3rem;
+  width: calc(40.2rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5); */
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: rgb(240, 240, 240);
+  /* border-radius: 20px; */
+  /* border: 0.2rem solid rgb(250, 224, 216); */
+  cursor: pointer;
+}
+
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: rgb(255, 206, 206);
+  color: white;
+ 
+  border-radius: 20px;
+}
